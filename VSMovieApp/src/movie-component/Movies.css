@@ -1,0 +1,215 @@
+.movie-header {
+  display: flex;
+  padding: 1.5rem;
+}
+#pop {
+  position: relative;
+  top: -175px;
+  /* scrollbar-width: none !important; */
+  cursor: pointer;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  width: 185px;
+  font-weight: 500;
+  padding: 15px;
+
+  height: 156.4px;
+  background: rgba(255, 255, 255, 0.8);
+
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#pop-bottom {
+  position: relative;
+  top: 295px;
+  /* scrollbar-width: none !important; */
+  cursor: pointer;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  width: 185px;
+  font-weight: 500;
+  padding: 15px;
+
+  height: 156.4px;
+  background: rgba(255, 255, 255, 0.8);
+
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.poper_release {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.reviewer {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: black;
+  color: #fff;
+  margin-top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.pop-rel {
+  font-size: 13px;
+  position: relative;
+  left: 15px;
+}
+.see-more-text {
+  color: grey;
+}
+.see-more-text:hover {
+  cursor: pointer;
+  color: inherit;
+}
+.movie-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  justify-content: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.movie-content-body {
+  font-size: 15px;
+}
+.title_pop {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+
+  text-align: center;
+}
+
+.poper_review {
+  font-size: 15px;
+  font-weight: 800;
+  margin: 0;
+  text-align: center;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 15s linear infinite;
+}
+.flimer {
+  color: dodgerblue;
+}
+.globe {
+  color: dodgerblue;
+  position: relative;
+  left: 98px;
+
+  margin-right: 5px;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.pop-lang {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+
+  /* padding: 0 !important;
+  margin: 0 !important;
+  font-size: 12px; */
+}
+
+.title {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+/* media query */
+
+@media screen and (max-width: 960px) {
+  .movie-content-body {
+    font-size: 13px;
+  }
+  .cardbody-img:hover {
+    transform: scale(1.5) ease-in-out !important;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .movie-content-body {
+    font-size: 12px;
+  }
+  .movie-content {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    gap: 1rem;
+  }
+  .movie-header {
+    padding: 1rem;
+  }
+  .cardbody-img:hover {
+    transform: scale(1.5) ease-in-out !important;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .movie-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .movie-content-body {
+    font-size: 17px;
+  }
+  .cardbody-img:hover {
+    transform: scale(1.5) ease-in-out !important;
+  }
+}

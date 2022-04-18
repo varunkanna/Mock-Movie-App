@@ -1,0 +1,30 @@
+.trailerbar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+@media only screen and (max-width: 860px) {
+  .trailerbar-content-inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .trailerbar-content {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 100%;
+  }
+  .trailerbar-content-inner{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+  }
+  .trailerbar-content-inner::-webkit-scrollbar {
+    display: none;
+  }
+}

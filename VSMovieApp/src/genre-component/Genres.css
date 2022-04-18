@@ -1,0 +1,31 @@
+.genre-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 3rem;
+}
+.genre-list {
+  padding: 0;
+}
+
+/* media query for genre module  */
+
+@media screen and (max-width: 1010px) {
+  .genre-content {
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 980px) {
+  .genre-content {
+    padding: 1rem;
+  }
+  .genre-list {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .genre-content {
+    display: none;
+  }
+}

@@ -1,0 +1,28 @@
+.see-more-content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+}
+.see-more {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 970px) {
+  .see-more-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .see-more-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .see-more-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

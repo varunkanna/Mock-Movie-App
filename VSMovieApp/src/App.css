@@ -1,0 +1,64 @@
+.nav-link {
+  padding: 1px;
+}
+.card-body {
+  padding: 1rem 0;
+}
+#insideBoxTrai2 {
+  overflow-x: hidden;
+}
+section {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+.scroll {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  padding-top: 0px;
+  overflow-x: scroll !important;
+}
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.trailer-header {
+  padding: 1.5rem;
+}
+
+.row-dragging {
+  background: #fafafa;
+  border: 1px solid #ccc;
+}
+
+.row-dragging td {
+  padding: 20px;
+}
+
+.row-dragging .drag-visible {
+  visibility: visible;
+}
+
+h5 {
+  color: white;
+}
+.movie-plus-trailer {
+  display: grid;
+  grid-template-columns: 6fr 2fr;
+}
+
+@media only screen and (max-width: 860px) {
+  .trailer-header {
+    padding: 1rem;
+  }
+  .movie-plus-trailer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  section {
+    display: block;
+  }
+}
